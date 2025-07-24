@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kitap Detayları</title>
+</head>
+
+<body>
+    <div class="ustbilgi">
+        <label>site ismi</label>
+        <a href="#">Profilim</a>
+        <a href="#">Ana sayfa</a>
+    </div>
+
+    <div class="kitap_gorsel">
+        <img id="kitap_resmi" src="sources/kitap.jpg" alt="Kitap Resmi">
+        <button id="favorile">
+            <img id="kalp" src="sources/empty_heart.jpg">
+        </button>
+    </div>
+
+    <div class="kitap_bilgiler">
+        <label id="kitap_adi">Kitap adı</label>
+        <label id="yazar">Yazar</label>
+        <label id="aciklama">Kitap açıklaması</label>
+        <button id="okunacaklar_ekle">Okunacaklar listesine ekle</button>
+        <button id="okunanlar_ekle">Okunanlar listesine ekle</button>
+    </div>
+
+    <div class="degerlendirmeler">
+        <label class="heading">Değerlendirmeler</label>
+        <button class="yildiz" id="yildiz1" puan="1">
+            <img id="star1" src="sources/star_empty.png">
+        </button>
+        <button class="yildiz" id="yildiz2">
+            <img id="star2" src="sources/star_empty.png">
+        </button>
+        <button class="yildiz" id="yildiz3">
+            <img id="star3" src="sources/star_empty.png">
+        </button>
+        <button class="yildiz" id="yildiz4">
+            <img id="star4" src="sources/star_empty.png">
+        </button>
+        <button class="yildiz" id="yildiz5">
+            <img id="star5" src="sources/star_empty.png">
+        </button>
+        <form>
+            <textarea id="yorum_yap" name="yorum" rows="6" cols="55" placeholder="Yorum yap"></textarea>
+            <button id="gonder" type="button">
+                <img id="send_icon" src="sources/send-icon.png">
+            </button>
+        </form>
+        <div class="yorum">
+            <label id="yorum_isim">İsim</label>
+            <img id="yorum_puan" src="sources/rating5.png">
+            <label>Yorum</label>
+        </div>
+    </div>
+
+    <div class="benzer_kitaplar">
+        <label class="heading">Benzer Kitaplar</label>
+        <div class="oneri">
+            <img id="oneri_resmi" src="sources/kitap.jpg">
+            <label id="oneri_ad">Kitap adı</label>
+            <label id="oneri_yazar">Yazar</label>
+            <label id="oneri_puan">Puan</label>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
